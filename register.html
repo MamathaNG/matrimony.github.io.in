@@ -3,33 +3,29 @@
  <head>
   <title>Telugu Matrimony</title>
 <header>
-<img src ="mat.jpg" alt="matrimony.com" float:"right" width="100" height="100" align="left">
-<center><br><h1>Meet your Life Partner</h1>
-</header>    
+<img src ="mat.jpg" alt="matrimony.com" float:"right" width="100" height="100" align="left"><br>
+<center><br><h1>Register Information</h1>
+</header>
 <style>
- body {
-        background-image:url("backgroundimage2.gif");
-        background-repeat: no-repeat;
-        background-position: right bottom;
-       }
-</style>
+.bg-image {
+  /* The image used */
+  background-image: url("background.jpg");
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>    
  </head>
-<body style="background-color:darksalmon">
-
+<body class="bg-image">
 <div>
- <table border="1" style="background-color:firebrick" cellpadding="5" cellspacing="10" width="100%" align="left">
-<tr>
-<th><button>home</button></th>
-<th><button>Register</button></th>
-<th><button>search</button></th>
-<th><button>upgrade</button></th>
-<th><button>help</button></th>
-</tr>
-</table>
-
 <form action="action_page.html" align="center" style="color:black">
   first name:<br>
-  <input type="text" " name="first name" value=" ">
+  <input type="text" name="first name" value=" ">
   <br>
   last name:<br>
   <input type="text" name="last name" value=" ">
@@ -37,11 +33,70 @@
   city:<br>
   <input type="text" name="city" value=" ">
   <br>
+  Address:<br>
+  <input type="text" name="Adress" value=" ">
+  <br>
+  caste details:<br>
+  <select caste="Select1" size="1">
+	<option value="">- Please select the gender -</option>
+	<option value"men">men</option>
+	<option value="women">women</option>
+	<option value="other">other</option>
+  </select><br>
   mobile no:<br>
   <input type="text" name="mobile" value=" ">
   <br>
-  <input type="submit" value="register">
-</form> 
+  <select Category="Select1" size="1">
+	<option value="">- Please select the category -</option>
+	<option value"Balija">Balija</option>
+	<option value="kapu">Kapu</option>
+	<option value="shetty">shetty</option>
+  </select><br>
+  Adhaar no:<br>
+  <input type="text" name="Adhaarno" value=" ">
+  <br>
+  <select status="Select1" size="1">
+	<option value="">- Please select the status -</option>
+	<option value"govt.emp">govt.emp</option>
+	<option value="pvt.emp">pvt.emp</option>
+	<option value="business">business</option>
+        <option value="student">student</option>
+  </select><br>
+  marital status:<br>
+  <input type="radio" name="married" value="married ">married
+  <input type="radio" name="unmarried" value="unmarried">unmarried
+  <br>
+
+  
+  <th><button><a href="telugumatrimony.html">register</button></th>
+  <input type="reset" value="reset">
+<div class="w3-content w3-section" style="max-width:400px">
+  <img class="mySlides w3-animate-top" src="scroll1.jpg" style="width:90%">
+  <img class="mySlides w3-animate-bottom" src="scroll2.jpg" style="width:90%">
+  <img class="mySlides w3-animate-top" src="scroll3.jpg" style="width:90%">
+  <img class="mySlides w3-animate-bottom" src="scroll4.jpg" style="width:90%">
+  <img class="mySlides w3-animate-bottom" src="scroll5.jpg" style="width:90%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500);    
+}
+</script> 
+<br>
+<center>
+<th><button><a href="telugumatrimony.html">home</button></th>
 </body>
 </html>
  
